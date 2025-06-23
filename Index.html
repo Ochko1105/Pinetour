@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .menu {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+      }
+      .location1 {
+        border-radius: 40px;
+        background-size: cover;
+        height: 370px;
+        width: 252px;
+        background-repeat: no-repeat;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 8px 8px rgba(41, 114, 139, 0.25),
+          -8px -8px rgba(31, 114, 170, 0.46);
+        position: relative;
+      }
+      .text1 {
+        font-size: 37px;
+        font-family: Bebas Neue, sans-serif;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(253, 253, 254, 0.8);
+        box-shadow: 0 4 0 rgba(0, 0, 0, 0.65);
+        z-index: 10;
+      }
+      .loaction-bg {
+        background-color: rgba(41, 41, 41, 0.4);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: 40px;
+        opacity: 0;
+        transition: opacity 1s;
+      }
+      .location1:hover .loaction-bg {
+        opacity: 1;
+      }
+      .location1:hover .text1 {
+        color: white;
+      }
+      .frame1 {
+        position: absolute;
+        top: 329px;
+        bottom: 307px;
+        right: 142px;
+        left: 1032px;
+        display: none;
+      }
+
+      .hairtsag {
+        height: 48px;
+        width: 513px;
+        background-color: rgba(238, 233, 217, 1);
+        border-radius: 120px;
+        padding: 32px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 120px;
+        border: 4px solid transparent;
+      }
+      .Sukhbaatar:hover .frame1 {
+        display: block;
+      }
+      .frame2 {
+        position: absolute;
+        display: none;
+        top: 200px;
+        bottom: 400px;
+        right: 160px;
+        left: 800px;
+      }
+      .Bulgan:hover .frame2 {
+        display: block;
+      }
+      .frame3 {
+        position: absolute;
+        top: 300px;
+        bottom: 300px;
+        right: 300px;
+        left: 650px;
+        display: none;
+      }
+      .togoo:hover .frame3 {
+        display: block;
+      }
+      .frame4 {
+        position: absolute;
+        top: 150px;
+        bottom: 400px;
+        right: 400px;
+        left: 700px;
+        display: none;
+      }
+      .terh:hover .frame4 {
+        display: block;
+      }
+      .frame5 {
+        position: absolute;
+        top: 150px;
+        bottom: 400px;
+        right: 250px;
+        left: 800px;
+        display: none;
+      }
+      .lake:hover .frame5 {
+        display: block;
+      }
+      .Footer {
+        height: 527px;
+        width: 384px;
+        background-color: rgba(250, 251, 252, 1);
+        border-radius: 40px;
+        padding: 0 0px;
+        box-sizing: border-box;
+        position: relative;
+      }
+      .hairtsag:hover {
+        border: 4px solid white;
+      }
+      .footerbg {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: 40px;
+        opacity: 0;
+        transition: opacity 1s;
+        padding: 0 0;
+        box-shadow: 8px 8px rgba(41, 114, 139, 0.25),
+          -10px -10px rgba(46, 65, 71, 0.4);
+      }
+      .Footer:hover .footerbg {
+        opacity: 1;
+        transition: opacity 1s;
+      }
+      .button {
+        margin-top: 40px;
+        height: 48px;
+        width: 336px;
+        background-color: rgba(164, 209, 226, 1);
+        border-radius: 15px;
+        color: rgba(0, 0, 0, 1);
+        border-color: transparent;
+        font-size: 16px;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+      }
+      .Footer:hover .button {
+        background-color: black;
+        transition: background-color 1s;
+        color: white;
+      }
+      .hairtsag1 {
+        width: 200px;
+        height: 200px;
+        background-color: antiquewhite;
+        opacity: 1;
+      }
+      .hairtsag1:hover {
+        background-color: black;
+        opacity: 1;
+        box-shadow: 8px 8px rgba(41, 114, 139, 0.25),
+          -10px -10px rgba(46, 65, 71, 0.4);
+      }
+
+      .figure {
+        height: 500px;
+        width: 400px;
+        background-color: antiquewhite;
+        border-radius: 30px;
+      }
+      .zurh :hover {
+        background-color: black;
+        height: 50px;
+        width: 50px;
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0 auto; width: 1440px">
+    <div
+      style="
+        background-image: url(background-image/hero.png);
+        width: 1440px;
+        height: 773px;
+        background-repeat: no-repeat;
+      "
+    >
+      <div
+        style="
+          width: 1204px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 50px 0;
+        "
+      >
+        <!-- HEAD -->
+        <header
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          <div>
+            <img
+              style="height: 35px; width: 101px"
+              src="Icon/logo1.png"
+              alt=""
+            />
+          </div>
+          <div style="display: flex; gap: 50px">
+            <a class="menu" href="Pinetour.html  ">Home</a>
+            <a class="menu" href="Pinetour.html">About</a>
+            <a class="menu" href="Pinetour.html">Contact</a>
+            <a class="menu" href="Pinetour.html"
+              ><img src="user.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <button
+              style="
+                font-size: 14px;
+                color: #000000;
+                height: 40px;
+                width: 40px;
+                background-color: #ffffff;
+                border: 0;
+                border-radius: 24px;
+              "
+            >
+              EN
+            </button>
+          </div>
+        </header>
+        <!-- END OF HEAD -->
+      </div>
+
+      <article
+        style="
+          font-family: Bebas Neue, sans-serif;
+          text-align: center;
+          width: 1204px;
+          height: 630px;
+          margin-left: auto;
+          margin-right: auto;
+        "
+      >
+        <div style="font-size: 80px; color: rgba(232, 237, 242, 0.72)">
+          Pure magic
+        </div>
+        <div style="font-size: 250px; color: rgba(253, 253, 254, 0.98)">
+          AWAITS !
+        </div>
+        <div
+          style="
+            font-size: 64px;
+            color: rgba(255, 255, 255, 0.8);
+            font-family: Hanuman, serif;
+          "
+        >
+          2024
+        </div>
+      </article>
+    </div>
+
+    <div
+      style="
+        background-image: url(background-image/location.png);
+        height: 435px;
+        width: 1440px;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 65px;
+      "
+    >
+      <div class="location1" style="background-image: url(hover-image/1.png)">
+        <div class="text1">Khorgiin togoo</div>
+        <div class="loaction-bg"></div>
+      </div>
+
+      <div class="location1" style="background-image: url(hover-image/2.png)">
+        <div class="text1">Terkhiin tsagaan lake</div>
+        <div class="loaction-bg"></div>
+      </div>
+
+      <div class="location1" style="background-image: url(hover-image/3.png)">
+        <div class="text1">Khuvsgul lake</div>
+        <div class="loaction-bg"></div>
+      </div>
+
+      <div class="location1" style="background-image: url(hover-image/4.png)">
+        <div class="text1">Amarbayasgalant Monastery</div>
+        <div class="loaction-bg"></div>
+      </div>
+    </div>
+
+    <aside
+      style="
+        background-image: url(background-image/Roadmap\ image.png);
+        background-size: cover;
+        width: 1440px;
+        background-repeat: no-repeat;
+        height: 1022px;
+        text-align: center;
+        position: relative;
+      "
+    >
+      <div
+        style="
+          font-size: 42px;
+          font-family: Inter, sans-serif;
+          padding-top: 120px;
+          color: rgba(0, 0, 0, 1);
+        "
+      >
+        Destination of Our Agency
+      </div>
+
+      <div
+        style="
+          font-size: 20px;
+          font-family: Inter, sans-serif;
+          color: rgba(24, 24, 27, 0, 7);
+        "
+      >
+        Pack your bags and get ready
+      </div>
+
+      <div style="width: 513px">
+        <div class="hairtsag Sukhbaatar" style="margin-top: 70px">
+          <div>
+            <div
+              style="
+                display: flex;
+                align-items: flex-start;
+                font-size: 24px;
+                font-family: Inter, sans-serif;
+              "
+            >
+              Sukhbaatar square
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: flex-start">
+              <img
+                style="height: 14px; width: 14px"
+                src="Icon/icon1.png"
+                alt=""
+              />
+              <div>Ulaanbator</div>
+            </div>
+          </div>
+
+          <div
+            style="
+              height: 52px;
+              width: 52px;
+              font-size: 14px;
+              background-color: white;
+              border-radius: 25px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: Inter, sans-serif;
+            "
+          >
+            DAY 1
+          </div>
+          <div class="frame1"><img src="Map-pin/Frame 176.png" alt="" /></div>
+        </div>
+
+        <div
+          class="hairtsag Bulgan"
+          style="background-color: rgba(139, 184, 193, 0.8)"
+        >
+          <div>
+            <div
+              style="
+                display: flex;
+                align-items: flex-start;
+                font-size: 24px;
+                font-family: Inter, sans-serif;
+              "
+            >
+              Amarbaysgalant monastery
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: flex-start">
+              <img
+                style="height: 14px; width: 14px"
+                src="Icon/icon1.png"
+                alt=""
+              />
+              <div>Bulgan</div>
+            </div>
+          </div>
+
+          <div
+            style="
+              height: 52px;
+              width: 52px;
+              font-size: 14px;
+              background-color: white;
+              border-radius: 25px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: Inter, sans-serif;
+            "
+          >
+            DAY 2
+          </div>
+          <div class="frame2"><img src="Map-pin/Frame 177.png" alt="" /></div>
+        </div>
+        <div
+          class="hairtsag togoo"
+          style="background-color: rgba(170, 216, 215, 0.8)"
+        >
+          <div>
+            <div
+              style="
+                display: flex;
+                align-items: flex-start;
+                font-size: 24px;
+                font-family: Inter, sans-serif;
+              "
+            >
+              Khorgiin togoo
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: flex-start">
+              <img
+                style="height: 14px; width: 14px"
+                src="Icon/icon1.png"
+                alt=""
+              />
+              <div>Arkhangai</div>
+            </div>
+          </div>
+
+          <div
+            style="
+              height: 52px;
+              width: 52px;
+              font-size: 14px;
+              background-color: white;
+              border-radius: 25px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: Inter, sans-serif;
+            "
+          >
+            DAY 3
+          </div>
+          <div class="frame3"><img src="Map-pin/11111.png" alt="" /></div>
+        </div>
+        <div
+          class="hairtsag terh"
+          style="background-color: rgba(139, 192, 189, 0.8)"
+        >
+          <div>
+            <div
+              style="
+                display: flex;
+                align-items: flex-start;
+                font-size: 24px;
+                font-family: Inter, sans-serif;
+              "
+            >
+              Terkhiin tsagaan lake
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: flex-start">
+              <img
+                style="height: 14px; width: 14px"
+                src="Icon/icon1.png"
+                alt=""
+              />
+              <div>Arkhangai</div>
+            </div>
+          </div>
+
+          <div
+            style="
+              height: 52px;
+              width: 52px;
+              font-size: 14px;
+              background-color: white;
+              border-radius: 25px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: Inter, sans-serif;
+            "
+          >
+            DAY 4
+          </div>
+          <div class="frame4"><img src="Map-pin/Frame 178.png" alt="" /></div>
+        </div>
+        <div
+          class="hairtsag lake"
+          style="background-color: rgba(151, 204, 224, 0.8)"
+        >
+          <div>
+            <div
+              style="
+                display: flex;
+                align-items: flex-start;
+                font-size: 24px;
+                font-family: Inter, sans-serif;
+              "
+            >
+              Khuvsgul lake
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: flex-start">
+              <img
+                style="height: 14px; width: 14px"
+                src="Icon/icon1.png"
+                alt=""
+              />
+              <div>Khuvsgul</div>
+            </div>
+          </div>
+
+          <div
+            style="
+              height: 52px;
+              width: 52px;
+              font-size: 14px;
+              background-color: white;
+              border-radius: 25px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: Inter, sans-serif;
+            "
+          >
+            DAY 5
+          </div>
+          <div class="frame5"><img src="Map-pin/Frame 179.png" alt="" /></div>
+        </div>
+      </div>
+    </aside>
+    <!-- FOOTER -->
+    <footer
+      style="
+        background-image: url(background-image/Price&Footer\ image.png);
+        width: 1440px;
+        height: 1120px;
+        background-repeat: no-repeat;
+        text-align: center;
+      "
+    >
+      <div
+        style="
+          font-size: 42px;
+          color: rgba(0, 0, 0, 1);
+          font-family: Inter, sans-serif;
+          font-weight: 600px;
+          padding-top: 40px;
+        "
+      >
+        Pricing of Our Agency
+      </div>
+      <div
+        style="
+          font-size: 20px;
+          font-family: Inter, sans-serif;
+          color: rgba(24, 24, 27, 0.7);
+          padding-top: 10px;
+        "
+      >
+        Choose a package thats right for you
+      </div>
+      <div
+        style="
+          display: flex;
+          gap: 24px;
+          justify-content: center;
+          margin-top: 79px;
+        "
+      >
+        <div class="Footer">
+          <div class="footerbg"></div>
+          <div style="padding: 0 24px">
+            <div style="display: flex; gap: 16px; height: 92px; width: 384px">
+              <div>
+                <div style="height: 40px; width: 40px; padding-top: 32px">
+                  <img
+                    class="zurh"
+                    style="height: 30px; width: 30px"
+                    src="Icon/button1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                style="
+                  font-size: 18px;
+                  font-family: Inter, sans-serif;
+                  padding-top: 39px;
+                "
+              >
+                Budget package
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 10px;
+              "
+            >
+              <div
+                style="
+                  font-size: 40px;
+                  font-family: Montserrat, sans-serif;
+                  color: rgba(48, 48, 48, alpha);
+                "
+              >
+                500$
+              </div>
+              <div
+                style="
+                  font-size: 16px;
+                  font-family: Inter, sans-serif;
+                  color: rgba(145, 145, 145, 1);
+                "
+              >
+                Essentials Covered
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+              "
+            >
+              <div
+                style="
+                  padding-left: 40px;
+                  padding-top: 16px;
+                  font-size: 18px;
+                  font-family: Inter, sans-serif;
+                "
+              >
+                includes:
+              </div>
+              <div style="display: flex">
+                <div>
+                  <img
+                    style="height: 20px; width: 20px; padding-right: 20px"
+                    src="Icon/check.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="
+                    font-size: 14px;
+                    font-family: Inter, sans-serif;
+                    color: rgba(63, 65, 69, 1);
+                  "
+                >
+                  Group transportation (shared van/bus)
+                </div>
+              </div>
+              <div style="display: flex; text-align: left">
+                <div>
+                  <img
+                    style="height: 20px; width: 20px; padding-right: 20px"
+                    src="Icon/check.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="
+                    font-size: 14px;
+                    font-family: Inter, sans-serif;
+                    color: rgba(63, 65, 69, 1);
+                  "
+                >
+                  Standard accommodation (yurt or guest house)
+                </div>
+              </div>
+              <div style="display: flex">
+                <div>
+                  <img
+                    style="height: 20px; width: 20px; padding-right: 20px"
+                    src="Icon/check.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="
+                    font-size: 14px;
+                    font-family: Inter, sans-serif;
+                    color: rgba(63, 65, 69, 1);
+                  "
+                >
+                  Guided lake tour
+                </div>
+              </div>
+              <div style="display: flex">
+                <div>
+                  <img
+                    style="height: 20px; width: 20px; padding-right: 20px"
+                    src="Icon/check.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="
+                    font-size: 14px;
+                    font-family: Inter, sans-serif;
+                    color: rgba(63, 65, 69, 1);
+                  "
+                >
+                  1 meal per day (breakfast)
+                </div>
+              </div>
+            </div>
+            <div class="button">Select package</div>
+          </div>
+        </div>
+        <div class="Footer">
+          <div class="footerbg"></div>
+          <div style="padding: 0 24px">
+            <div style="display: flex; gap: 16px; height: 92px; width: 384px">
+              <div>
+                <img
+                  style="height: 36px; width: 36px; padding-top: 32px"
+                  src="Icon/button1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                style="
+                  font-size: 18px;
+                  font-family: Inter, sans-serif;
+                  padding-top: 39px;
+                "
+              >
+                Standard Package
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 10px;
+              "
+            >
+              <div
+                style="
+                  font-size: 40px;
+                  font-family: Montserrat, sans-serif;
+                  color: rgba(48, 48, 48, alpha);
+                "
+              >
+                800$
+              </div>
+              <div
+                style="display: flex; justify-content: space-between; gap: 85px"
+              >
+                <div
+                  style="
+                    font-size: 16px;
+                    font-family: Inter, sans-serif;
+                    color: rgba(145, 145, 145, 1);
+                  "
+                >
+                  Balanced adventure
+                </div>
+                <div
+                  style="
+                    height: 27px;
+                    width: 91px;
+                    background-color: rgba(105, 114, 181, 1);
+                    color: white;
+                    border-radius: 10px;
+                    border-color: transparent;
+                    font-size: 16px;
+                    font-family: Inter, sans-serif;
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  Popular
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+              "
+            >
+              <div
+                style="
+                  padding-left: 40px;
+                  padding-top: 10px;
+                  font-size: 18px;
+                  font-family: Inter, sans-serif;
+                "
+              >
+                includes:
+              </div>
+              <div style="display: flex">
+                <div>
+                  <img
+                    style="height: 20px; width: 20px; padding-right: 20px"
+                    src="Icon/check.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="
+                    font-size: 14px;
+                    font-family: Inter, sans-serif;
+                    color: rgba(63, 65, 69, 1);
+                  "
+                >
+                  Comfortable transportation (mini-bus)
+                </div>
+              </div>
+              <div style="display: flex; text-align: left">
+                <div>
+                  <img
+                    style="height: 20px; width: 20px; padding-right: 20px"
+                    src="Icon/check.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="
+                    font-size: 14px;
+                    font-family: Inter, sans-serif;
+                    color: rgba(63, 65, 69, 1);
+                  "
+                >
+                  Mid-range accommodation (private yurt or lodge)
+                </div>
+              </div>
+              <div style="display: flex">
+                <div>
+                  <img
+                    style="height: 20px; width: 20px; padding-right: 20px"
+                    src="Icon/check.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="
+                    font-size: 14px;
+                    font-family: Inter, sans-serif;
+                    color: rgba(63, 65, 69, 1);
+                  "
+                >
+                  Guided lake tour + nearby hiking
+                </div>
+              </div>
+              <div style="display: flex">
+                <div>
+                  <img
+                    style="height: 20px; width: 20px; padding-right: 20px"
+                    src="Icon/check.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="
+                    font-size: 14px;
+                    font-family: Inter, sans-serif;
+                    color: rgba(63, 65, 69, 1);
+                  "
+                >
+                  2 meals per day (breakfast and dinner)
+                </div>
+              </div>
+            </div>
+            <div class="button">Select package</div>
+          </div>
+        </div>
+        <div class="Footer">
+          <div class="footerbg"></div>
+          <div style="padding: 0 24px">
+            <div style="display: flex; gap: 16px; height: 92px; width: 384px">
+              <div>
+                <img
+                  style="height: 36px; width: 36px; padding-top: 32px"
+                  src="Icon/button1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                style="
+                  font-size: 18px;
+                  font-family: Inter, sans-serif;
+                  padding-top: 39px;
+                "
+              >
+                Luxury Package
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 10px;
+              "
+            >
+              <div
+                style="
+                  font-size: 40px;
+                  font-family: Montserrat, sans-serif;
+                  color: rgba(48, 48, 48, alpha);
+                "
+              >
+                1200$
+              </div>
+              <div
+                style="
+                  font-size: 16px;
+                  font-family: Inter, sans-serif;
+                  color: rgba(145, 145, 145, 1);
+                "
+              >
+                Ultimate Comfort
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+              "
+            >
+              <div
+                style="
+                  padding-left: 40px;
+                  padding-top: 16px;
+                  font-size: 18px;
+                  font-family: Inter, sans-serif;
+                "
+              >
+                includes:
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 16px;
+                  text-align: left;
+                "
+              >
+                <div style="display: flex">
+                  <div>
+                    <img
+                      style="height: 20px; width: 20px; padding-right: 20px"
+                      src="Icon/check.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    style="
+                      font-size: 14px;
+                      font-family: Inter, sans-serif;
+                      color: rgba(63, 65, 69, 1);
+                    "
+                  >
+                    Private transportation (SUV)
+                  </div>
+                </div>
+                <div style="display: flex; text-align: left">
+                  <div>
+                    <img
+                      style="height: 20px; width: 20px; padding-right: 20px"
+                      src="Icon/check.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    style="
+                      font-size: 14px;
+                      font-family: Inter, sans-serif;
+                      color: rgba(63, 65, 69, 1);
+                    "
+                  >
+                    Luxury accommodation (lake front lodge)
+                  </div>
+                </div>
+                <div style="display: flex; text-align: left">
+                  <div>
+                    <img
+                      style="height: 20px; width: 20px; padding-right: 20px"
+                      src="Icon/check.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    style="
+                      font-size: 14px;
+                      font-family: Inter, sans-serif;
+                      color: rgba(63, 65, 69, 1);
+                    "
+                  >
+                    Guided tours (lake + reindeer herder experience)
+                  </div>
+                </div>
+                <div style="display: flex">
+                  <div>
+                    <img
+                      style="height: 20px; width: 20px; padding-right: 20px"
+                      src="Icon/check.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    style="
+                      font-size: 14px;
+                      font-family: Inter, sans-serif;
+                      color: rgba(63, 65, 69, 1);
+                    "
+                  >
+                    All meals included (local cuisine)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button">Select package</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 265px">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            padding: 0 120px;
+          "
+        >
+          <div style="display: flex; gap: 20px">
+            <div
+              style="
+                height: 44px;
+                width: 120px;
+                background-color: rgba(250, 251, 252, 1);
+                border-radius: 20px;
+                border-color: transparent;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                text-align: center;
+
+                padding: 0 20px;
+              "
+            >
+              <div>
+                <img
+                  style="height: 24px; width: 24px"
+                  src="Icon/FacebookIcon.png"
+                  alt=""
+                />
+              </div>
+              <div
+                style="
+                  font-size: 18px;
+                  color: rgba(105, 114, 181, 1);
+                  font-family: Montserrat, sans-serif;
+                "
+              >
+                <a
+                  href="Facebook.com"
+                  style="text-decoration: none; color: rgba(105, 114, 181, 1)"
+                >
+                  Facebook</a
+                >
+              </div>
+            </div>
+            <div
+              style="
+                height: 44px;
+                width: 120px;
+                background-color: rgba(250, 251, 252, 1);
+                border-radius: 20px;
+                border-color: transparent;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                text-align: center;
+
+                padding: 0 20px;
+              "
+            >
+              <div>
+                <a href="Instagram.com" style="text-decoration: none">
+                  <img
+                    style="height: 24px; width: 24px"
+                    src="Icon/InstagramIcon.png"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                style="
+                  font-size: 18px;
+                  color: rgba(105, 114, 181, 1);
+                  font-family: Montserrat, sans-serif;
+                "
+              >
+                <a
+                  href="Instagram.com"
+                  style="
+                    text-decoration-line: none;
+                    color: rgba(105, 114, 181, 1);
+                  "
+                >
+                  Instagram</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              style="height: 35px; width: 101px; padding-left: 150px"
+              src="Icon/logo1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <figure
+      style="
+        height: 1000px;
+        width: 1500px;
+        background-color: aqua;
+        margin: 0 auto;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          padding-top: 50px;
+        "
+      >
+        <div class="figure">
+          <div
+            style="
+              display: flex;
+              padding-left: 20px;
+              padding-top: 30px;
+              align-items: flex-start;
+              gap: 20px;
+            "
+          >
+            <div>
+              <img
+                style="width: 36px; height: 36px"
+                src="Icon/button1.png"
+                alt=""
+              />
+            </div>
+            <div style="font-size: 18px">figure 1</div>
+          </div>
+        </div>
+
+        <div class="figure">figure 2</div>
+        <div class="figure">figure 3</div>
+      </div>
+    </figure>
+  </body>
+</html>
